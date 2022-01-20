@@ -33,7 +33,7 @@ def linked_list():
 
 
 def test_remove_kth_node(head):
-    """Basic tests."""
+    """Remove kth node tests."""
     assert list_matches_array(head, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
     # Remove 4th node from end of list (value 6)
