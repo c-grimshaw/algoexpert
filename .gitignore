@@ -1,4 +1,3 @@
 /.pytest_cache
 /.vscode
-arrays/__pycache__/longest_peak.cpython-310.pyc
-arrays/__pycache__/test_longest_peak.cpython-310-pytest-6.2.5.pyc
+*/__pycache__
