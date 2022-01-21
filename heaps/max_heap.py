@@ -1,14 +1,14 @@
-"""AlgoExpert - MinHeap - Heaps
+"""AlgoExpert - Heaps
 
 Not an AlgoExpert challenge, but an implementation of a
-MinHeap using built-ins.
+MaxHeap using built-ins.
 """
 
 import heapq
 
 
-class MinHeap:
-    """MinHeap implementation."""
+class MaxHeap:
+    """MaxHeap implementation."""
 
     _heap: list
 
@@ -17,16 +17,15 @@ class MinHeap:
 
     def insert(self, value):
         """Insert a value into the heap, preserving heap invariant."""
-        heapq.heappush(self._heap, value)
+        heapq.heappush(self._heap, -1 * value)
 
     def peek(self):
         """Returns the value of the maximum element in the heap."""
-        return self._heap[0]
+        return -1 * self._heap[0]
 
     def pop(self):
         """Returns the maximum element in the heap, removing it."""
-        return heapq.heappop(self._heap)
+        return -1 * heapq.heappop(self._heap)
 
     def __len__(self):
-        """Length of heap."""
         return len(self._heap)
